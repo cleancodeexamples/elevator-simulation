@@ -29,3 +29,13 @@ route the elevator to all requested floors
 * Top floor? 5
 * Lowest floor? -1
 * Single request button on each floor, not up/down
+
+## Running tests
+
+```sh
+$ bin/rspec --format doc
+```
+
+## State Diagram
+
+![State](images/Elevator-State-Diagram.png)
