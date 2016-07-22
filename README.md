@@ -12,9 +12,9 @@ To simulate an operating elevator
 
 ### Operations
 
-move an elevator to a floor
-request the elevator visits a floor
-route the elevator to all requested floors
+* move an elevator to a floor
+* request the elevator visits a floor
+* route the elevator to all requested floors
 
 ### Assess
 
