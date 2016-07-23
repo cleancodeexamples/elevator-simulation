@@ -1,4 +1,4 @@
-### Project Purpose
+## Project Purpose
 
 To simulate an operating elevator
 

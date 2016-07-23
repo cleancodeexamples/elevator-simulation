@@ -25,6 +25,6 @@ class TestElevator < Test::Unit::TestCase
 		e.add_request(7)
 
 		expected = [6,1,7]	# floors visited
-		assert_equal expected, e.instance_variable_get(:@visits)
+		assert_equal expected, e.instance_variable_get(:@visited)
 	end
 end
