@@ -10,13 +10,17 @@ To simulate an operating elevator
 
 ### Setup
 
+* Initial floor 0
+
 ### Operations
 
 * move an elevator to a floor
 * request the elevator visits a floor
-* route the elevator to all requested floors
+* route the elevator to all requested floors if requests
 
 ### Assess
+
+* None
 
 ## Movement algorithm
 
