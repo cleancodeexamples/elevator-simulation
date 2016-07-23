@@ -6,17 +6,17 @@ To simulate an operating elevator
 
 ### Setup
 
-1.1 Initial floor 0
+- 1.1 ✓ Initial floor 0
 
 ### Operations
 
-2.1 (done) move an elevator to a floor
-2.2 (done) request the elevator visit a floor
-2.3 (done) route the elevator to all requested floors (if requests)
+- 2.1 ✓ move an elevator to a floor
+- 2.2 ✓ request the elevator visit a floor
+- 2.3 ✓ route the elevator to all requested floors (if requests)
 
 ### Assess
 
-3.1 (done) record each floor visit (for diagnostics)
+- 3.1 ✓ record each floor visit (for diagnostics)
 
 ## Movement algorithm
 
