@@ -24,5 +24,9 @@ class TestElevator < Test::Unit::TestCase
 		e.add_request(1)
 		e.add_request(7)
 
+		# todo, in progress
+		# outputs progress to console
+		# but instead needs to assert
+
 	end
 end
