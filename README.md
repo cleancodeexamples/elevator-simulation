@@ -20,7 +20,7 @@ To simulate an operating elevator
 
 ### Assess
 
-* record each floor visit
+* (done) record each floor visit (for diagnostics)
 
 ## Movement algorithm
 

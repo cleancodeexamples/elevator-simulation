@@ -17,16 +17,14 @@ class TestElevator < Test::Unit::TestCase
 		assert_equal expected, e.instance_variable_get(:@current_floor)
 	end
 
-	def test_elevator_request	# TODO in progress
+	def test_elevator_request
 		e = Elevator.new
 		e.send(:move, 6)
 
 		e.add_request(1)
 		e.add_request(7)
 
-		# todo, in progress
-		# outputs progress to console
-		# but instead needs to assert
-
+		expected = [6,1,7]	# floors visited
+		assert_equal expected, e.instance_variable_get(:@visits)
 	end
 end
