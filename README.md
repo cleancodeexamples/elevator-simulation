@@ -30,8 +30,8 @@ To simulate an operating elevator
 ## Assumptions and Constraints
 
 * Number of elevators? 1
-* Top floor? 5
-* Lowest floor? -1
+* Top floor? not yet implemented
+* Lowest floor? not yet implemented
 * Single request button on each floor, not up/down
 
 ## Running tests
