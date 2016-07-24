@@ -22,6 +22,7 @@ class Elevator
 		@current_floor = 0	# startup floor
 		@direction = 0		# up=1, down=-1, stationary=0
 		@requests = []		# requests for floor
+		@visited = []		# records each floor visited for diagnostics
 	end
 
 	# service any floor requests by moving the elevator
@@ -51,6 +52,7 @@ class Elevator
 		@current_floor = destination
 		@requests[destination] = nil	# clear requests for the floor
 		
-		puts "moved to floor #{destination}"
+		@visited << @current_floor		# record floor visits for diagnostics
+		# puts "moved to floor #{destination}"
 	end
 end

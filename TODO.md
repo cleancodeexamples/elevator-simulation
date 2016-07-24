@@ -1,9 +1,7 @@
 # Todo
 
 * consider breaking Requests out of Elevator
-* lower/top floor numbers not flexible
-
-* URGENT - test for elevator requests not completed
+* lower/top floor numbers not implemented
 
 Phase 1
 ----
