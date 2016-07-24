@@ -10,7 +10,7 @@ To simulate an operating elevator
 
 ### Operations
 
-- 2.1 ✓ move an elevator to a floor
+- 2.1 ✓ move the elevator to a floor
 - 2.2 ✓ request the elevator visit a floor
 - 2.3 ✓ route the elevator to all requested floors (if requests)
 

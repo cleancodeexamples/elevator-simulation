@@ -28,18 +28,17 @@ class Elevator
 	# service any floor requests by moving the elevator
 	def perform_requests()
 		while @requests.any?
-			# get next floors
+
+			# get next floors up
+			@direction = 1
 			while next_floor_up = @requests[@current_floor+1..-1].select {|i| i != nil}.first
-				@direction = 1
-				# puts "next floor up #{next_floor_up}"
 				move(next_floor_up)
 			end
 	
 			# no more floors to get up,
 			# so get next floors down
-			while next_floor_down = @requests[0..@current_floor].reverse.select {|i| i != nil}.first
-				@direction = -1
-				# puts "next floor down #{next_floor_down}"
+			@direction = -1
+			while next_floor_down = @requests[0..@current_floor].reverse.select {|i| i != nil}.first	
 				move(next_floor_down)
 			end
 		end
@@ -50,9 +49,8 @@ class Elevator
 	# move elevator to destination floor
 	def move(destination)
 		@current_floor = destination
-		@requests[destination] = nil	# clear requests for the floor
+		@requests[@current_floor] = nil	# clear requests for the floor
 		
 		@visited << @current_floor		# record floor visits for diagnostics
-		# puts "moved to floor #{destination}"
 	end
 end
