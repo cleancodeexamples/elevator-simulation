@@ -1,17 +1,12 @@
 # Represents the elevator
 class Elevator
-	
+
 	# add a request the elevator visit a floor
 	def add_request(floor)
-		if floor == @current_floor	# ignore if request is for current floor
-			return
-		end
+		return if floor == @current_floor
 
 		@requests[floor] = floor
-		if @direction == 0
-			# if no direction, the elevator is stationary
-			perform_requests()
-		end
+		perform_requests() if @direction == 0
 	end
 
 
@@ -22,7 +17,7 @@ class Elevator
 		@current_floor = 0	# startup floor
 		@direction = 0		# up=1, down=-1, stationary=0
 		@requests = []		# requests for floor
-		@visited = []		# records each floor visited for diagnostics
+		@visited = []			# records each floor visited for diagnostics
 	end
 
 	# service any floor requests by moving the elevator
@@ -34,11 +29,11 @@ class Elevator
 			while next_floor_up = @requests[@current_floor+1..-1].select {|i| i != nil}.first
 				move(next_floor_up)
 			end
-	
+
 			# no more floors to get up,
 			# so get next floors down
 			@direction = -1
-			while next_floor_down = @requests[0..@current_floor].reverse.select {|i| i != nil}.first	
+			while next_floor_down = @requests[0..@current_floor].reverse.select {|i| i != nil}.first
 				move(next_floor_down)
 			end
 		end
@@ -50,7 +45,7 @@ class Elevator
 	def move(destination)
 		@current_floor = destination
 		@requests[@current_floor] = nil	# clear requests for the floor
-		
+
 		@visited << @current_floor		# record floor visits for diagnostics
 	end
 end
