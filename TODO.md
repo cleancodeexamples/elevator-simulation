@@ -1,7 +1,7 @@
 # Todo
 
-* consider breaking Requests out of Elevator
-* lower/top floor numbers not implemented
+* Rejected - not required: consider breaking Requests out of Elevator
+* Rejected - not required: lower/top floor numbers not implemented
 
 Phase 1
 ----
