@@ -4,7 +4,7 @@ require 'test/unit'
 class TestElevator < Test::Unit::TestCase
 	def test_new_elevator_default_floor	  # default should be on floor 0
 		e = Elevator.new
-		
+
 		expected = 0
 		assert_equal expected, e.instance_variable_get(:@current_floor)
 	end
